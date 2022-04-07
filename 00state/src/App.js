@@ -11,8 +11,8 @@ const [navPage, setNavPage] = useState("Portfolio" )
   return (
     <div className="App" >
      <Header navPage={navPage} setNavPage={setNavPage} /> 
-     <Content navPage={navPage} />
-     <Footer />
+      <Content navPage={navPage} />
+     <Footer /> 
     
     </div>
   );
