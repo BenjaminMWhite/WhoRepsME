@@ -1,10 +1,12 @@
-import Navigation from "./Navigation"
+
 
 function Header(props) {
 return(
 <div id="Header"> 
-<h1>Benjamin M. White</h1>
-<Navigation navPage={props.navPage} setNavPage= {props.setNavPage} /></div>
+<h1>Who Reps Me</h1>
+{/* login sign up sign out */}
+{/* next election date */}
+</div>
 )
 }
 
