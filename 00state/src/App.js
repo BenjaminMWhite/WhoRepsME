@@ -1,9 +1,8 @@
 import Header from './components/Header';
 import './App.css';
 import Footer from './components/Footer';
-import Content from './components/Content';
-import {useState, useEffect} from 'react';
-
+import Main from './components/Main';
+import {useState} from 'react'
 
 function App() {
   const APIKey ="AIzaSyCC2qVOqKfM-1QGPIKXKFQhe5Km0qCJuic"
@@ -61,7 +60,7 @@ office()
    return (
     <div className="App" >
      <Header navPage={navPage} setNavPage={setNavPage} /> 
-      <Content navPage={navPage} />
+      <Main navPage={navPage} />
      <Footer /> 
     
     </div>
