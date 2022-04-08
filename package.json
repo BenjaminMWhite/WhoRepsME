@@ -1,0 +1,24 @@
+{
+    "name": "whorepsme",
+    "version": "1.0.0",
+    "description": "",
+    "main": "server/index.js",
+    "scripts": {
+        "start": "node server/index.js",
+        "develop": "concurrently \"cd server && npm run watch\" \"cd 00state && npm start\"",
+        "install": "cd server && npm i && cd ../00state && npm i",
+        "seed": "cd server && npm run seed",
+        "build": "cd 00state && npm run build"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "concurrently": "^5.1.0"
+    },
+    "dependencies": {
+        "nodemailer": "^6.7.3",
+        "react-bootstrap": "^2.2.3",
+        "stripe": "^8.215.0"
+    }
+}
