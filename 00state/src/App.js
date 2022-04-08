@@ -1,8 +1,8 @@
 import Header from './components/Header';
 import './App.css';
 import Footer from './components/Footer';
-import Content from './components/Content';
-import {useState, useEffect} from 'react'
+import Main from './components/Main';
+import {useState} from 'react'
 
 function App() {
 const [navPage, setNavPage] = useState("Portfolio" )
@@ -11,7 +11,7 @@ const [navPage, setNavPage] = useState("Portfolio" )
   return (
     <div className="App" >
      <Header navPage={navPage} setNavPage={setNavPage} /> 
-      <Content navPage={navPage} />
+      <Main navPage={navPage} />
      <Footer /> 
     
     </div>
