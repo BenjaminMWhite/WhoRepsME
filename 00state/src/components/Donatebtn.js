@@ -1,9 +1,12 @@
 import React from "react";
+
+import {loadStripe} from '@stripe/stripe-js';
+
 // import the style element 
-const Stripe = require('stripe');
+
 
 // stripe api key for testing 
-const stripePromise = Stripe(
+const stripePromise = loadStripe(
     pk_test_51KlwL0LxwRlgtwaWLHSgTG1tefWqayobSdSOcqogkDl5HTPSr6XhobyvG42ipNlCkYVQRhV6ketbai52EWue4W8P008PrsMFns);
 
 // donate function button function 
@@ -32,7 +35,7 @@ const stripePromise = Stripe(
 
 // btn view with onclick 
 return (
-    <button className="donbtn" onClick={handleClick}>
+    <button className="DonationButton" onClick={handleClick}>
       Donate {amnt}$
     </button>
   )
