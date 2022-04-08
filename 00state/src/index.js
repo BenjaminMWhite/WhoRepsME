@@ -30,7 +30,7 @@ function information (){
     {var photo =data.officials[i].photoUrl}
  // console.log(data.officials[i].photoUrl)}
 } return data}
-// create code here that iterates data.officials.length times of react script
+
 
   
 )}
