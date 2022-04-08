@@ -2,7 +2,8 @@ import Header from './components/Header';
 import './App.css';
 import Footer from './components/Footer';
 import Content from './components/Content';
-import {useState, useEffect} from 'react'
+import {useState, useEffect} from 'react';
+
 
 function App() {
   const APIKey ="AIzaSyCC2qVOqKfM-1QGPIKXKFQhe5Km0qCJuic"

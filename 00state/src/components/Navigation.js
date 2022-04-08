@@ -10,8 +10,6 @@ function Navigation(props) {
     <BasicButtons name={logOut}/>
     <BasicButtons name={signUp}/>
     </Nav>
-    
-    
     )
     }
     
