@@ -1,10 +1,14 @@
 import { Nav } from "react-bootstrap"
+import BasicButtons from "./LoginBtn"
 function Navigation(props) {
+    const logIn = "Log In"
+    const logOut = "Log Out"
+    const signUp = "Sign Up"
     return(
     <Nav>
-     <Nav.Item className={props.navPage === "Portfolio" ? "selectednav" : null} onClick={() =>{props.setNavPage("Portfolio")}  } >Portfolio</Nav.Item>
-     <Nav.Item className={props.navPage === "Resume" ? "selectednav" : null} onClick={() =>{props.setNavPage("Resume")} } >Resume</Nav.Item>
-     <Nav.Item className={props.navPage === "AboutMe" ? "selectednav" : null} onClick={() =>{props.setNavPage("AboutMe")}} >About Me</Nav.Item>
+    <BasicButtons name={logIn}/>
+    <BasicButtons name={logOut}/>
+    <BasicButtons name={signUp}/>
     </Nav>
     
     
