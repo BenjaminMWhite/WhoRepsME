@@ -17,6 +17,8 @@
         "concurrently": "^5.1.0"
     },
     "dependencies": {
-        "react-bootstrap": "^2.2.3"
+        "nodemailer": "^6.7.3",
+        "react-bootstrap": "^2.2.3",
+        "stripe": "^8.215.0"
     }
 }

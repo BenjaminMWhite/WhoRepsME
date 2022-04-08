@@ -1,3 +1,6 @@
+
+// boilerplate for node mailer
+
 let transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
@@ -9,3 +12,13 @@ let transporter = nodemailer.createTransport({
       refreshToken: process.env.OAUTH_REFRESH_TOKEN
     }
   });
+
+
+  // this is our sending template
+
+  //const sendMail = {
+    //from: ourgooglecloud@gmail.com,
+   // to: concernedpoliticlady@gmail.com,
+   // subject: 'Election upcoming',
+   // text: 'Here is an update of your next election it will be on 6/24/2022'
+ // };
