@@ -8,15 +8,11 @@ type Query {
     getMock: Mock
     }
 
-type Category {
-    _id: ID
-    name: String
-}
 type User {
     id: ID
     name: String
     email: String
-    # Password: Password
+    password: String
     state: String
     city: String
     address: String
@@ -26,8 +22,8 @@ type Auth {
     user: User
 }
 type Mutation {
-    addUser(firstName: String!, lastName: String!, email: String!, password: String!): Auth
-    updateUser(firstName: String, lastName: String, email: String, password: String): User
+    addUser(firstName: String!, lastName: String!, email: String!, password: String!, state: String!, city: String!, address: String!): Auth
+    updateUser(firstName: String, lastName: String, email: String, password: String, state: String, city: String, address: String): User
 }
 `
 
