@@ -17,7 +17,7 @@ const APIKey ="AIzaSyCC2qVOqKfM-1QGPIKXKFQhe5Km0qCJuic"
 
 var site = "https://www.googleapis.com/civicinfo/v2/representatives?key="+ APIKey +"&address=208smarylandave%20youngstown%20oh"
 function information (){ 
-  fetch(site)
+  return fetch(site)
   .then(response => response.json())
   // .then(data => console.log(data.officials.length))
   .then(data => {for (let i=0; i <data.officials.length; i++)
@@ -27,12 +27,17 @@ function information (){
     var phone=data.officials[i].phone
     var website=data.officials[i].urls[0]
     if (data.officials[i].photoUrl !=null)
-    {var photo =data.officials[i].photoUrl
-  console.log(data.officials[i].photoUrl)}
-}}
-  )}
+    {var photo =data.officials[i].photoUrl}
+ // console.log(data.officials[i].photoUrl)}
+} return data}
+// create code here that iterates data.officials.length times of react script
+
+  
+)}
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-information()
+async function dPull (){const info = await information()
+console.log(info)}
+dPull()
 reportWebVitals();
