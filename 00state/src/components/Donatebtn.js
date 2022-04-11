@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 import {loadStripe} from '@stripe/stripe-js';
 
@@ -18,12 +18,12 @@ const stripePromise = loadStripe(
           stripe.redirectToCheckout({
               
               lineItems: [{ price: itemID, quantity: 1 }],
-              mode: "payment",
+              mode: 'payment',
             // successUrl & cancelUrl 
-              successUrl: window.location.protocol + "//deployed web /",
-              cancelUrl: window.location.protocol + "//deployed web/",
+              successUrl: window.location.protocol + '//deployed web /',
+              cancelUrl: window.location.protocol + '//deployed web/',
 
-              submitType: "donate",
+              submitType: 'donate',
             })
 
             .then(function (result) {
@@ -35,7 +35,7 @@ const stripePromise = loadStripe(
 
 // btn view with onclick 
 return (
-    <button className="DonationButton" onClick={handleClick}>
+    <button className='DonationButton' onClick={handleClick}>
       Donate {amnt}$
     </button>
   )
@@ -44,10 +44,10 @@ return (
 export default function App() {
   return (
     <>
-      <div className="justify-center ">
+      <div className='justify-center '>
         <DonationButton
-          amnt={"$1"}
-          itemID="prod_LSv4rXYFjogaQH "
+          amnt={'$1'}
+          itemID='prod_LSv4rXYFjogaQH '
         ></DonationButton>
       </div>
     </>

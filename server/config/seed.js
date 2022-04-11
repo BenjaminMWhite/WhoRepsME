@@ -10,12 +10,12 @@ db.once(`open`, async () => {
         lastName: 'Doe',
         email: 'john@example.com',
         password: 'password123',
-        state: `ohio`,
+        state: 'ohio',
         city: 'columbus',
         address: '1000 columbus drive'
     });
 
-    console.log(`website has been seeded!!`);
+    console.log('website has been seeded!!');
 
     process.exit();
 })
