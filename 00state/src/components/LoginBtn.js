@@ -5,7 +5,7 @@ import ButtonGroup from '@mui/material/ButtonGroup'
 export default function BasicButtons(props) {
   return (
     <ButtonGroup variant='contained'>
-      <Button variant="contained">{props.name}</Button>
+      <Button variant='contained'>{props.name}</Button>
     </ButtonGroup>
   );
 }

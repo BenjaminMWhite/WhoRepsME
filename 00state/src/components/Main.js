@@ -87,7 +87,7 @@ function Main() {
 
   // const { posts, title } = props;
   // console.log(title)
-  const title = "WhoRepsMe"
+  const title = 'WhoRepsMe'
   return (
     <Grid
       item
@@ -99,8 +99,10 @@ function Main() {
         },
       }}
     >
+
       <div>Hi</div>
       <Typography variant="h6" gutterBottom>
+
         {title}
       </Typography>
       <Divider />

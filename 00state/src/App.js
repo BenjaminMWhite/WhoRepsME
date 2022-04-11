@@ -5,6 +5,7 @@ import Main from './components/Main';
 // import {useState} from 'react'
 
 function App() {
+
 //   const APIKey ="AIzaSyCC2qVOqKfM-1QGPIKXKFQhe5Km0qCJuic"
 
 // var site = "https://www.googleapis.com/civicinfo/v2/representatives?key="+ APIKey +"&address=208smarylandave%20youngstown%20oh"
@@ -14,6 +15,7 @@ function App() {
 //   information()
 // },[])
 // function information (){ 
+
  
 //     return fetch(site)
 //     .then(response => response.json())
@@ -58,9 +60,11 @@ function App() {
 // office()
 
    return (
+
     <div className="App" >
      <Header  /> 
       <Main />
+
      <Footer /> 
     
     </div>
