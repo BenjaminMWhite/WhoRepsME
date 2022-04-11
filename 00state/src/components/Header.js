@@ -22,9 +22,10 @@ import IconButton from '@mui/material/IconButton';
 import SearchIcon from '@mui/icons-material/Search';
 import Typography from '@mui/material/Typography';
 import Link from '@mui/material/Link';
-
+import Navigation from './Navigation';
 function Header() {
-    const title = 'WhoRepsMe'
+
+    
   return (
     <React.Fragment>
       <Toolbar sx={{ borderBottom: 1, borderColor: 'divider' }}>
@@ -37,20 +38,12 @@ function Header() {
           noWrap
           sx={{ flex: 1 }}
         >
-          {title}
+  
         </Typography>
         <IconButton>
           <SearchIcon />
         </IconButton>
-        <Button variant='outlined' size='small'>
-          Sign up
-        </Button>
-        <Button variant='outlined' size='small'>
-        Log Out
-        </Button>
-        <Button variant='outlined' size='small'>
-        Log In
-        </Button>
+     
       </Toolbar>
       <Toolbar
         component='nav'
@@ -69,6 +62,7 @@ function Header() {
             {section.title}
           </Link>
         ))} */}
+      <Navigation />
       </Toolbar>
     </React.Fragment>
   );

@@ -20,7 +20,7 @@ import PropTypes from 'prop-types';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import Divider from '@mui/material/Divider';
-
+;
 // import Markdown from './Markdown';
 
 function Main() {
@@ -145,12 +145,3 @@ function Main() {
 
 export default Main;
 
-
-        //     var name= data.officials[i].name
-        //     var address=data.officials[i].address
-        //     var party=data.officials[i].party
-        //     var phone=data.officials[i].phone
-        //     var website=data.officials[i].urls[0]
-        //     if (data.officials[i].photoUrl !=null)
-        //     {var photo =data.officials[i].photoUrl}
-        //     console.log(data.officials[i].photoUrl)}

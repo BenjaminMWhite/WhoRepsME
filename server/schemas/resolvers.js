@@ -13,7 +13,7 @@ const resolvers = {
         }
     },
     Mutation: {
-        addUser: async (parent, args) => {
+        addProfile: async (parent, args) => {
             const user = await User.create(args);
             const token = signToken(user);
             return { token, user };
@@ -30,7 +30,7 @@ const resolvers = {
             const token = signToken(user);
             return { token, user };
         },
-        updateUser: async (parent, args, context) => {
+        updateProfile: async (parent, args, context) => {
             if (context.user) {
               return await User.findByIdAndUpdate(context.user._id, args, { new: true });
             }
