@@ -5,10 +5,10 @@ import Main from './components/Main';
 import {useState} from 'react'
 
 function App() {
-  const APIKey ="AIzaSyCC2qVOqKfM-1QGPIKXKFQhe5Km0qCJuic"
+  const APIKey ='AIzaSyCC2qVOqKfM-1QGPIKXKFQhe5Km0qCJuic'
 
-var site = "https://www.googleapis.com/civicinfo/v2/representatives?key="+ APIKey +"&address=208smarylandave%20youngstown%20oh"
-const [navPage, setNavPage] = useState("Portfolio" )
+var site = 'https://www.googleapis.com/civicinfo/v2/representatives?key='+ APIKey +'&address=208smarylandave%20youngstown%20oh'
+const [navPage, setNavPage] = useState('Portfolio')
 const [data,setData] =useState({})
 // useEffect(() =>{
 //   information()
@@ -58,7 +58,7 @@ function information (){
 office()
 
    return (
-    <div className="App" >
+    <div className='App' >
      <Header navPage={navPage} setNavPage={setNavPage} /> 
       <Main navPage={navPage} />
      <Footer /> 
