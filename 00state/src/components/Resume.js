@@ -1,8 +1,8 @@
-import { ListGroup } from "react-bootstrap"
+import { ListGroup } from 'react-bootstrap'
 function Resume() {
     return(
     <div>
-     <a href="https://docs.google.com/document/d/1O1aMqlz2S7MHerosMVRUdfu111hGaZ2YTszYV-fypVI/edit#heading=h.gjdgxs">Resume</a>
+     <a href='https://docs.google.com/document/d/1O1aMqlz2S7MHerosMVRUdfu111hGaZ2YTszYV-fypVI/edit#heading=h.gjdgxs'>Resume</a>
      <h3>Proficiencies</h3>
      <ListGroup>
      <ListGroup.Item>JavaScript</ListGroup.Item>

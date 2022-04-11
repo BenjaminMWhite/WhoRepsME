@@ -1,9 +1,9 @@
-import { Nav } from "react-bootstrap"
-import BasicButtons from "./LoginBtn"
+import { Nav } from 'react-bootstrap'
+import BasicButtons from './LoginBtn'
 function Navigation(props) {
-    const logIn = "Log In"
-    const logOut = "Log Out"
-    const signUp = "Sign Up"
+    const logIn = 'Log In'
+    const logOut = 'Log Out'
+    const signUp = 'Sign Up'
     return(
     <Nav>
     <BasicButtons name={logIn}/>
