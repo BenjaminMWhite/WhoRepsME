@@ -20,8 +20,8 @@ let transporter = nodemailer.createTransport({
   // this is our sending template
 
   const theEmail = {
-    from: ourgooglecloud@gmail.com,
-    to: concernedpoliticlady@gmail.com,
+   // from: ourgooglecloud@gmail.com,
+   // to: concernedpoliticlady@gmail.com,
     subject: 'Election upcoming',
     text: 'Here is an update of your next election it will be on 6/24/2022'
   };
