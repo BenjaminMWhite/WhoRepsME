@@ -31,13 +31,14 @@ function Copyright() {
 }
 
 function Footer(props) {
-  const { description, title } = props;
+  // const { description, title } = props;
 
   return (
-    <Box component='footer' sx={{ bgcolor: 'background.paper', py: 6 }}>
-      <Container maxWidth='lg'>
-        <Typography variant='h6' align='center' gutterBottom>
-          {title}
+
+    <Box component="footer" sx={{ bgcolor: 'background.paper', py: 6 }}>
+      <Container maxWidth="lg">
+        <Typography variant="h6" align="center" gutterBottom>
+          {/* {title} */}
         </Typography>
         <Typography
           variant='subtitle1'
@@ -45,7 +46,7 @@ function Footer(props) {
           color='text.secondary'
           component='p'
         >
-          {description}
+          {/* {description} */}
         </Typography>
         <Copyright />
       </Container>
@@ -53,9 +54,9 @@ function Footer(props) {
   );
 }
 
-Footer.propTypes = {
-  description: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
-};
+// Footer.propTypes = {
+//   description: PropTypes.string.isRequired,
+//   title: PropTypes.string.isRequired,
+// };
 
 export default Footer;
