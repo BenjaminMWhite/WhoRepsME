@@ -28,7 +28,7 @@ function Header() {
   return (
     <React.Fragment>
       <Toolbar sx={{ borderBottom: 1, borderColor: 'divider' }}>
-        <Button size='small'>Subscribe</Button>
+        <Button size='small'>Donate</Button>
         <Typography
           component='h2'
           variant='h5'
@@ -44,6 +44,12 @@ function Header() {
         </IconButton>
         <Button variant='outlined' size='small'>
           Sign up
+        </Button>
+        <Button variant='outlined' size='small'>
+        Log Out
+        </Button>
+        <Button variant='outlined' size='small'>
+        Log In
         </Button>
       </Toolbar>
       <Toolbar
