@@ -9,7 +9,7 @@ const resolvers = {
         user: async (parent, args, context) => {
             if (context.user) {
                 const user = await User.findById(context.user_id).populate({
-                    populate: ``
+                    populate: ''
                     // TODO: this is where we need to put in the last looked at person/ stared person
                 })
             }
