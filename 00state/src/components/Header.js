@@ -24,7 +24,8 @@ import Typography from '@mui/material/Typography';
 import Link from '@mui/material/Link';
 
 function Header() {
-    const title = 'WhoRepsMe'
+
+    
   return (
     <React.Fragment>
       <Toolbar sx={{ borderBottom: 1, borderColor: 'divider' }}>
@@ -37,7 +38,7 @@ function Header() {
           noWrap
           sx={{ flex: 1 }}
         >
-          {title}
+  
         </Typography>
         <IconButton>
           <SearchIcon />
