@@ -42,52 +42,72 @@ function Main() {
     information()
 
   }, []);
-  useEffect(() =>{
+  // useEffect(() =>{
  
-    office()
+  //   office()
    
-  },[info.officials.length])
+  // },[info.officials.length])
   //for (let i=0; i <data.officials.length; i++)
 
 
-  function office(){
-   console.log(info)
-  for (let i = 0; i < info.officials.length; i++)
-  {
-  
-    var k = 0
+  // const Office = () => { 
 
-  officeA()
-  function officeA() {
-    var j = 0
-    officeB()
-    function officeB() {
-      if (i === info.offices[k].officialIndices[j]) 
-      {      var name= info.officials[i].name
-             var address=info.officials[i].address
-             var party=info.officials[i].party
-             var phone=info.officials[i].phone
-             var website=info.officials[i].urls[0]
-             var position =info.offices[k]
-         console.log(info.offices[k]) }
-      else if (!info.offices[k].officialIndices[j])
-       {
-        k++
-        officeA()
-      }
-      else if (info.offices[k].officialIndices[j] != i) {
-        j++
-        officeB()
-      }
-    }
-  }
-  }
-  }
+  // for (let i = 0; i < info.officials.length; i++)
+  // {
+  
+  //   var k = 0
+
+  // officeA()
+  // function officeA() {
+  //   var j = 0
+  //   officeB()
+  //   function officeB() {
+  //     if (i === info.offices[k].officialIndices[j]) 
+  //     {  function theData() {
+  //       return(<div>
+  //         hi
+  //       {info.officials[i].name}      
+  //       {/* <Rep Party={info.officials[i].party} />
+  //       <Rep Phone={info.officials[i].phone}  />
+  //       <Rep Website={info.officials[i].urls[0]}   />
+  //       <Rep Address={info.officials[i].address} />
+  //       <Rep Office={info.offices[k]}  /> */}
+        
+  //       </div>) }
+  //       theData()}
+
+  //     else if (!info.offices[k].officialIndices[j])
+  //      {
+  //       k++
+  //       officeA()
+  //     }
+  //     else if (info.offices[k].officialIndices[j] != i) {
+  //       j++
+  //       officeB()
+  //     }
+  //   }
+  // }
+  // }
+  // }
 //office()
 
   // const { posts, title } = props;
   // console.log(title)
-  const title = 'WhoRepsMe'
+  const title = 'Where'
+  const Office = () => { 
+    info.officials.map(function(inf){
+      return <li key={inf.name}> hey</li>
+    })}
+    // {info.officials[i].name}      
+    {/* <Rep Party={info.officials[i].party} />
+    <Rep Phone={info.officials[i].phone}  />
+    <Rep Website={info.officials[i].urls[0]}   />
+    <Rep Address={info.officials[i].address} />
+    <Rep Office={info.offices[k]}  /> */}
+    
+
+
+
   return (
     <Grid
       item
@@ -103,7 +123,10 @@ function Main() {
       <div>Hi</div>
       <Typography variant="h6" gutterBottom>
 
-        {title}
+        <ol> {info.officials.map(function(inf){
+      return <li key={inf.name}> Name {inf.name}, Party {inf.party}, Phone Number {inf.phones} , Mailing Address {inf.address[0].line1} {inf.address[0].city} {inf.address[0].state}    </li>
+      
+    })}</ol>
       </Typography>
       <Divider />
       {/* {posts.map((post) => (
