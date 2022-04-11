@@ -10,9 +10,9 @@ function App() {
 var site = "https://www.googleapis.com/civicinfo/v2/representatives?key="+ APIKey +"&address=208smarylandave%20youngstown%20oh"
 const [navPage, setNavPage] = useState("Portfolio" )
 const [data,setData] =useState({})
-useEffect(() =>{
-  information()
-},[])
+// useEffect(() =>{
+//   information()
+// },[])
 function information (){ 
  
     return fetch(site)
