@@ -28,7 +28,7 @@ function Header() {
   return (
     <React.Fragment>
       <Toolbar sx={{ borderBottom: 1, borderColor: 'divider' }}>
-        <Button size='small'>Donate</Button>
+      
         <Typography
           component='h2'
           variant='h5'
