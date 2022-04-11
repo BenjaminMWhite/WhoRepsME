@@ -22,7 +22,7 @@ import IconButton from '@mui/material/IconButton';
 import SearchIcon from '@mui/icons-material/Search';
 import Typography from '@mui/material/Typography';
 import Link from '@mui/material/Link';
-
+import Navigation from './Navigation';
 function Header() {
 
     
@@ -43,15 +43,7 @@ function Header() {
         <IconButton>
           <SearchIcon />
         </IconButton>
-        <Button variant='outlined' size='small'>
-          Sign up
-        </Button>
-        <Button variant='outlined' size='small'>
-        Log Out
-        </Button>
-        <Button variant='outlined' size='small'>
-        Log In
-        </Button>
+     
       </Toolbar>
       <Toolbar
         component='nav'
@@ -70,6 +62,7 @@ function Header() {
             {section.title}
           </Link>
         ))} */}
+      <Navigation />
       </Toolbar>
     </React.Fragment>
   );
