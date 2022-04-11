@@ -1,5 +1,5 @@
-const express = require("express");
-const nodemailer = require("nodemailer");
+const express = require('express');
+const nodemailer = require('nodemailer');
 const app = express();
 //require("dotenv").config();
 // boilerplate for node mailer
@@ -29,9 +29,9 @@ let transporter = nodemailer.createTransport({
  
 transporter.sendMail(theEmail), function (err, data) {
     if (err) {
-      console.log("Error " + err);
+      console.log('Error ' + err);
     } else {
-      console.log("Email sent successfully");
+      console.log('Email sent successfully');
     }
    };
 

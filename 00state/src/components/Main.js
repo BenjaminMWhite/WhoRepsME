@@ -24,7 +24,7 @@ import Divider from '@mui/material/Divider';
 function Main(props) {
   // const { posts, title } = props;
   // console.log(title)
-  const title = "WhoRepsMe"
+  const title = 'WhoRepsMe'
   return (
     <Grid
       item
@@ -36,7 +36,7 @@ function Main(props) {
         },
       }}
     >
-      <Typography variant="h6" gutterBottom>
+      <Typography variant='h6' gutterBottom>
         {title}
       </Typography>
       <Divider />
