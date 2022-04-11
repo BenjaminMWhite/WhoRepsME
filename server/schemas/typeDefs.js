@@ -1,18 +1,14 @@
 const { gql } = require('apollo-server-express');
 
 const typeDefs = gql`
-type Mock {
-    name: String
-}
 type Query {
-    getMock: Mock
-    }
-
+    user: User
+}
 type User {
     id: ID
-    name: String
+    firstName: String
+    lastName: String
     email: String
-    password: String
     state: String
     city: String
     address: String
@@ -24,6 +20,7 @@ type Auth {
 type Mutation {
     addUser(firstName: String!, lastName: String!, email: String!, password: String!, state: String!, city: String!, address: String!): Auth
     updateUser(firstName: String, lastName: String, email: String, password: String, state: String, city: String, address: String): User
+    login(email: String!, password: String!): Auth
 }
 `
 
