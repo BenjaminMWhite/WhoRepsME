@@ -6,9 +6,17 @@ function Navigation(props) {
     const signUp = 'Sign Up'
     return(
     <Nav>
-    <BasicButtons name={logIn}/>
-    <BasicButtons name={logOut}/>
-    <BasicButtons name={signUp}/>
+  <Nav.Item>
+    <Nav.Link href="/home">Active</Nav.Link>
+  </Nav.Item>
+  <Nav.Item>
+    <Nav.Link eventKey="login">Link</Nav.Link>
+  </Nav.Item>
+  <Nav.Item>
+    <Nav.Link eventKey="signup">Link</Nav.Link>
+  </Nav.Item>
+  <Nav.Item>
+  </Nav.Item>
     </Nav>
     )
     }

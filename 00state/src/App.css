@@ -1,5 +1,9 @@
 body {
-  background-color: #e9edf2 ;
+  background-image : url(./capb.jpg);
+opacity : 0.9;
+  text-decoration-color: #f8f8f8;
+ 
+
 }
 
 .App {
@@ -10,13 +14,19 @@ body {
   justify-content: center;
 }
 .selectednav {
-color: aliceblue;
+color: rgb(127, 136, 143);
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
+
+.i2{
+  margin-right: center;
+  margin: 20px;
+}
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -32,11 +42,12 @@ color: aliceblue;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgb(88, 86, 86);
 }
 #Header {
 display: flex;
 justify-content: space-between;
+background-color: rgb(70, 67, 67)
 }
 
 .App-link {
@@ -70,7 +81,7 @@ footer {
 }
 
 Nav {
-
+text-align: left;
     flex-direction: row;
 
 }
