@@ -1,16 +1,17 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { useMutation } from '@apollo/client';
 import { ADD_PROFILE } from '../utils/mutations';
 import Auth from '../utils/auth';
-const Signup = () => {
+const Signup = (props) => {
+  const navigate = useNavigate()
   const [formState, setFormState] = useState({
     firstName: '',
     lastName: '',
     email: '',
-    state: '',
-    address: '',
-    city: '',
+    state: props.address.state,
+    address: props.address.address,
+    city: props.address.city,
     password: '',
   });
   const [addProfile, { error, data }] = useMutation(ADD_PROFILE);
@@ -21,16 +22,19 @@ const Signup = () => {
       ...formState,
       [name]: value,
     });
+
   };
   // submit form
   const handleFormSubmit = async (event) => {
+    props.setAddress({address:formState.address, city:formState.city, state:formState.state})
     event.preventDefault();
-    console.log(formState);
+   
     try {
       const { data } = await addProfile({
         variables: { ...formState },
       });
       Auth.login(data.addProfile.token);
+      navigate("/")
     } catch (e) {
       console.error(e);
     }
