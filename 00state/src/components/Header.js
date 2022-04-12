@@ -22,9 +22,10 @@ import IconButton from '@mui/material/IconButton';
 import SearchIcon from '@mui/icons-material/Search';
 import Typography from '@mui/material/Typography';
 import Link from '@mui/material/Link';
-
+import Navigation from './Navigation';
 function Header() {
-    const title = 'WhoRepsMe'
+
+    
   return (
     <React.Fragment>
       <Toolbar sx={{ borderBottom: 1, borderColor: 'divider' }}>
@@ -53,6 +54,19 @@ function Header() {
         variant='dense'
         sx={{ justifyContent: 'center', overflowX: 'auto' }}
       >
+        {/* {sections.map((section) => (
+          <Link
+            color="inherit"
+            noWrap
+            key={section.title}
+            variant="body2"
+            href={section.url}
+            sx={{ p: 1, flexShrink: 0 }}
+          >
+            {section.title}
+          </Link>
+        ))} */}
+      <Navigation />
       </Toolbar>
 <div>
 <h1> Search for your representatives  </h1>

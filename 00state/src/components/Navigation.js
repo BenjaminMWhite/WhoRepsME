@@ -1,22 +1,15 @@
 import { Nav } from 'react-bootstrap'
 import BasicButtons from './LoginBtn'
+import Auth  from '../utils/auth'
+import { Button } from '@mui/material'
 function Navigation(props) {
     const logIn = 'Log In'
-    const logOut = 'Log Out'
     const signUp = 'Sign Up'
     return(
     <Nav>
-  <Nav.Item>
-    <Nav.Link href="/home">Active</Nav.Link>
-  </Nav.Item>
-  <Nav.Item>
-    <Nav.Link eventKey="login">Link</Nav.Link>
-  </Nav.Item>
-  <Nav.Item>
-    <Nav.Link eventKey="signup">Link</Nav.Link>
-  </Nav.Item>
-  <Nav.Item>
-  </Nav.Item>
+    <BasicButtons name={logIn} location='/login' />
+    <Button variant="contained" onClick={Auth.logout} location= '#' >LogOut</Button>
+    <BasicButtons name={signUp} location = '/signUp'/>
     </Nav>
     )
     }
