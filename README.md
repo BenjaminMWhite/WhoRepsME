@@ -9,7 +9,9 @@
   ## description
   In order to aid democray, Who Reps Me allows a user to sign up enter their address and brings forth every elected official who represents them
   ## How to install
+
   Run it through Heroku https://who-reps-me.herokuapp.com/
+  
   ## What its used for
   signing up and enter your address and find out who your represenatives are.
   ## Who built this
@@ -18,4 +20,6 @@
   No tests needed
   ## Questions and how to reach me
    [Github Repository](https://github.com/BenjaminMWhite)
+
   [Email](mailto:bwhitem@gmail.com)
+
